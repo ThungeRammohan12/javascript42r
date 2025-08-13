@@ -1,0 +1,12 @@
+html,body{
+    margin-top: 11%;
+    margin-left: 20%;
+    background-color: aquamarine;
+}
+#value{
+    margin-left: 10%;
+}
+button{
+    cursor: pointer;
+    padding: 10px 20px;
+}

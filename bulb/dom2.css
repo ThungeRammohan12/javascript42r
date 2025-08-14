@@ -1,0 +1,8 @@
+html,body{
+    margin-top: 8%; 
+    margin-left: 20%;
+}
+button{
+    cursor: pointer;
+    padding:10px 15px;
+}

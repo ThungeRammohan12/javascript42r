@@ -2,3 +2,24 @@ html,body{
     margin-top: 11%;
     margin-left: 23%;
 }
+#red-btn{
+    background-color: red;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#orange-btn{
+    background-color:orange;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#blue-btn{
+    background-color: blue;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+h1{
+    margin-left: 3%;
+}

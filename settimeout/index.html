@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 38%;
+            margin-top:8%;
+        }
+        #container{
+      background: #2a2a40;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+      width: 350px;
+      color: white;
+    }
+
+        #img{
+            height:200px;
+            width: 200px;
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>stop the bomb</h1>
+    <img id="img" src="https://www.shutterstock.com/image-vector/realistic-bomb-burning-fuse-emitting-600nw-2474308221.jpg" alt="">
+    <br>
+    <h2>solve this question: 2+3</h2>
+    <h2>Timer:</h2>
+    <h3 id="time">10</h3>
+    <input type="text" id="input">
+    <button onclick="verify()">submit</button>
+    </div>
+
+
+    <script>
+        let set_elem=setTimeout(function verify(){
+            console.log("happy birthday reddy")
+            img_ele=document.getElementById("img")
+            img_ele.src="https://t3.ftcdn.net/jpg/00/42/53/70/360_F_42537001_JMwYOwBmDJ4pXlkMNRUZl8LkZ7TYoa9x.jpg"
+        },10000);
+
+        let timer=setInterval(function(){
+            time_value=document.getElementById("time").textContent
+            time_value=parseInt(time_value)
+            time_value=time_value-1
+            document.getElementById("time").textContent=time_value
+        },1000)
+
+        setTimeout(() => {
+        clearInterval(timer);
+        console.log("Interval stopped!");
+        }, 10000);
+
+
+        function verify(){
+          let input_ele=document.getElementById("input")
+          input_ele=parseInt(input_ele.value)
+          if(input_ele==5){
+            clearTimeout(set_elem,timer)
+            clearInterval(timer)
+          }
+        }
+    </script>
+</body>
+</html>
